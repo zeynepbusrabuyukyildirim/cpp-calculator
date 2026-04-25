@@ -2,36 +2,39 @@
 using namespace std;
 
 int main() {
-    double a, b;
-    char op;
+double a, b;
+char op;
 
-    cout << "Ilk sayiyi gir: ";
-    cin >> a;
+```
+cout << "Enter the first number: ";
+cin >> a;
 
-    cout << "Operator gir (+ - * /): ";
-    cin >> op;
+cout << "Enter an operator (+, -, *, /): ";
+cin >> op;
 
-    cout << "Ikinci sayiyi gir: ";
-    cin >> b;
+cout << "Enter the second number: ";
+cin >> b;
 
-    if(op == '+') {
-        cout << "Sonuc: " << a + b;
-    }
-    else if(op == '-') {
-        cout << "Sonuc: " << a - b;
-    }
-    else if(op == '*') {
-        cout << "Sonuc: " << a * b;
-    }
-    else if(op == '/') {
-        if(b != 0)
-            cout << "Sonuc: " << a / b;
-        else
-            cout << "0'a bolunemez!";
-    }
-    else {
-        cout << "Gecersiz operator!";
-    }
+if(op == '+') {
+    cout << "Result: " << a + b;
+}
+else if(op == '-') {
+    cout << "Result: " << a - b;
+}
+else if(op == '*') {
+    cout << "Result: " << a * b;
+}
+else if(op == '/') {
+    if(b != 0)
+        cout << "Result: " << a / b;
+    else
+        cout << "Error: Division by zero is not allowed!";
+}
+else {
+    cout << "Error: Invalid operator!";
+}
 
-    return 0;
+return 0;
+```
+
 }
